@@ -11,7 +11,7 @@ const Quote = () => {
       <div className="absolute inset-0">
         {/* Glowing orbs */}
         <motion.div
-          className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-300 rounded-full opacity-20 blur-xl"
+          className="absolute top-12 left-1/4 w-32 h-32 bg-blue-300 rounded-full opacity-20 blur-xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.2, 0.3, 0.2],
@@ -23,7 +23,7 @@ const Quote = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-300 rounded-full opacity-20 blur-xl"
+          className="absolute bottom-12 right-1/4 w-40 h-40 bg-purple-300/50 rounded-full opacity-5 blur-xl"
           animate={{
             scale: [1, 1.3, 1],
             opacity: [0.2, 0.4, 0.2],
@@ -61,8 +61,8 @@ const Quote = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <BlurFade delay={0.25 * 2} inView>
           <TextReveal
-            text="« Vous n'avez pas besoin d'être excellent pour vous lancer dans quelque chose, mais vous devez vous lancer pour le devenir. » — Zig Ziglar,"
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 max-w-3xl text-center"
+            text="« You don't have to be great to start, but you have to start to be great. » — Zig Ziglar"
+            className="text-3xl lg:text-4xl font-semibold text-gray-800 text-center"
           />
         </BlurFade>
       </div>

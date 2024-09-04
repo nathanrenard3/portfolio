@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
+import DotPattern from "@/components/magicui/dot-pattern";
 
 const Loading = ({
   setIsLoading,
@@ -37,6 +38,12 @@ const Loading = ({
             <div className="absolute bottom-1/3 left-1/2 w-72 h-72 bg-pink-400 rounded-full opacity-10 blur-3xl"></div>
             <div className="absolute top-1/2 right-1/6 w-56 h-56 bg-green-400 rounded-full opacity-5 blur-3xl"></div>
           </div>
+
+          <DotPattern
+            width={20}
+            height={20}
+            className="absolute inset-0 opacity-10"
+          />
 
           <div className="mb-8 relative z-10">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>

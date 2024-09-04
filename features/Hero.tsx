@@ -7,6 +7,7 @@ import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 import FloatingIcons from "@/components/customs/FloatingIcons";
+import DotPattern from "@/components/magicui/dot-pattern";
 
 const Hero = () => {
   return (
@@ -22,6 +23,12 @@ const Hero = () => {
       {/* Icons */}
       <FloatingIcons />
 
+      <DotPattern
+        width={20}
+        height={20}
+        className="absolute inset-0 opacity-10"
+      />
+
       <div className="container mx-auto px-4 text-center z-10 mt-[-10vh]">
         <div className="z-10 flex items-center justify-center mb-8">
           <div
@@ -30,7 +37,7 @@ const Hero = () => {
             )}
           >
             <AnimatedShinyText className="inline-flex items-center justify-center px-5 py-2 transition ease-out hover:text-white">
-              <span>💻 Full-Stack Developer</span>
+              <span>💻 Full-stack Developer</span>
               <ArrowRightIcon className="ml-2 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
             </AnimatedShinyText>
           </div>
@@ -55,12 +62,12 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 px-4">
             <a
               href="#projects"
-              className="px-6 sm:px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+              className="px-6 sm:px-8 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 transform hover:scale-105"
             >
               View Projects
             </a>
             <a
-              href="#contact"
+              href="https://cal.com/nathan-renard/freelance-rdv"
               className="px-6 sm:px-8 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition duration-300 transform hover:scale-105"
             >
               Contact Me
