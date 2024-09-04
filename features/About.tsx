@@ -13,9 +13,8 @@ const About = () => {
 
   const kpis = [
     { value: "3", prefix: "+", label: "Years Experience" },
-    { value: "2", prefix: "", label: "Projects Completed" },
+    { value: "1", prefix: "", label: "Projects Completed" },
     { value: "450", prefix: "€", label: "Daily Rate" },
-    { value: "100", prefix: "%", label: "Of Satisfied Clients" },
   ];
 
   return (

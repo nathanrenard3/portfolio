@@ -31,16 +31,6 @@ const projects: Project[] = [
     ctaUrl: "https://iconik-hub.fr",
   },
   {
-    id: 2,
-    title: "CountAct",
-    description:
-      "A SaaS for directors to manage emergency operations and manage her teams.",
-    technologies: ["React", "Django", "Postgres", "Docker"],
-    image: "/projects/countact.png",
-    ctaText: "View Project",
-    ctaUrl: "https://countact.fr",
-  },
-  {
     id: 3,
     title: "Become my next client",
     description: "You can become my next client by clicking the button below.",
