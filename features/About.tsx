@@ -20,6 +20,7 @@ const About = () => {
 
   return (
     <section
+      id="about"
       ref={ref}
       className="mx-auto bg-gradient-to-b from-white to-gray-100 min-h-screen relative overflow-hidden py-16 sm:py-32"
     >
