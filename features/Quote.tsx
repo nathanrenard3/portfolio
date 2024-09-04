@@ -3,6 +3,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import TextReveal from "@/components/magicui/text-reveal";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Quote = () => {
   return (
@@ -56,6 +57,14 @@ const Quote = () => {
           />
         ))}
       </div>
+
+      <Image
+        src="/assets/asset-3.svg"
+        alt="asset-3"
+        width={1920}
+        height={1080}
+        className="absolute left-0 top-1/2 -translate-y-1/2 opacity-25 md:opacity-15"
+      />
 
       {/* Quote content */}
       <div className="absolute inset-0 flex items-center justify-center">

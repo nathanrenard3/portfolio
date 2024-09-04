@@ -28,9 +28,7 @@ export default function Home() {
           </div>
           <Quote />
           <About />
-          <div id="stacks">
-            <Stacks />
-          </div>
+          <Stacks />
           <div className="relative bg-gradient-to-b from-gray-900 to-black">
             <DotPattern
               width={30}

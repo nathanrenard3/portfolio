@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
 import DotPattern from "@/components/magicui/dot-pattern";
+import Image from "next/image";
 
 const Loading = ({
   setIsLoading,
@@ -17,7 +18,7 @@ const Loading = ({
     const timer = setTimeout(() => {
       setIsVisible(false);
       setIsLoading(false);
-    }, 5000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, [setIsLoading]);
@@ -45,17 +46,36 @@ const Loading = ({
             className="absolute inset-0 opacity-10"
           />
 
-          <div className="mb-8 relative z-10">
+          <Image
+            src="/assets/asset-1.svg"
+            alt="asset-1"
+            width={250}
+            height={250}
+            className="absolute top-1/2 inset-0"
+          />
+
+          <Image
+            src="/assets/asset-2.svg"
+            alt="asset-2"
+            width={800}
+            height={800}
+            className="absolute right-0 top-0 bottom-0 opacity-5"
+          />
+
+          <div className="mb-4 sm:mb-8 relative z-10">
             <BoxReveal boxColor={"#ffffff"} duration={0.5}>
               <FadeText
                 text="Personal Portfolio"
-                className="text-6xl font-bold text-white"
+                className="text-4xl sm:text-6xl font-bold text-white text-center px-4"
               />
             </BoxReveal>
           </div>
 
           <BoxReveal boxColor={"#ffffff"} duration={0.5}>
-            <FadeText text="Loading..." className="text-2xl text-white" />
+            <FadeText
+              text="Loading..."
+              className="text-xl sm:text-2xl text-white"
+            />
           </BoxReveal>
         </motion.div>
       )}

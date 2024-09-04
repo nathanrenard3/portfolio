@@ -55,7 +55,7 @@ const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
+    <section id="projects" className="relative py-24 md:py-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="mb-12">
           <BlurFade delay={0.2}>

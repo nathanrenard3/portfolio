@@ -8,6 +8,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 import FloatingIcons from "@/components/customs/FloatingIcons";
 import DotPattern from "@/components/magicui/dot-pattern";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -27,6 +28,22 @@ const Hero = () => {
         width={20}
         height={20}
         className="absolute inset-0 opacity-10"
+      />
+
+      <Image
+        src="/assets/asset-1.svg"
+        alt="asset-1"
+        width={250}
+        height={250}
+        className="absolute top-1/2 inset-0"
+      />
+
+      <Image
+        src="/assets/asset-2.svg"
+        alt="asset-2"
+        width={800}
+        height={800}
+        className="absolute right-0 top-0 bottom-0 opacity-5"
       />
 
       <div className="container mx-auto px-4 text-center z-10 mt-[-10vh]">

@@ -24,15 +24,15 @@ const Navbar = () => {
   return (
     <motion.nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-colors duration-300 py-2",
-        scrolled ? "bg-gray-900/90 backdrop-blur-sm" : "bg-transparent"
+        "container fixed top-0 md:top-5 left-0 md:rounded-lg md:py-3 right-0 z-50 transition-colors duration-300 py-2",
+        scrolled ? "bg-gray-900/75 backdrop-blur-sm" : "bg-transparent"
       )}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-white text-xl font-bold">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <Link href="/" className="text-white text-lg font-bold">
           Nathan Renard
         </Link>
         <div className="hidden md:flex space-x-6">
@@ -41,7 +41,7 @@ const Navbar = () => {
           <NavLink href="#projects">Projects</NavLink>
         </div>
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white p-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           <HamburgerIcon isOpen={isOpen} />
@@ -97,17 +97,24 @@ const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => (
 
 const MobileMenu = ({
   setIsOpen,
+  scrolled,
 }: {
   setIsOpen: (isOpen: boolean) => void;
+  scrolled: boolean;
 }) => (
   <motion.div
     initial={{ opacity: 0, x: "100%" }}
     animate={{ opacity: 1, x: 0 }}
     exit={{ opacity: 0, x: "100%" }}
     transition={{ type: "spring", stiffness: 300, damping: 30 }}
-    className="fixed top-0 right-0 w-full h-screen bg-gray-900/95 backdrop-blur-sm z-50 md:hidden"
+    className="fixed top-0 right-0 w-full h-screen bg-gray-900/95 backdrop-blur-sm z-50 md:hidden flex flex-col"
   >
-    <div className="container h-full mx-auto px-4 py-20 flex flex-col justify-center items-center space-y-8">
+    <div className="flex justify-end p-4">
+      <button onClick={() => setIsOpen(false)} className="text-white p-2">
+        <CloseIcon />
+      </button>
+    </div>
+    <div className="flex-grow flex flex-col justify-center items-center space-y-8">
       <NavLink href="#about" onClick={() => setIsOpen(false)}>
         About
       </NavLink>
@@ -118,12 +125,6 @@ const MobileMenu = ({
         Projects
       </NavLink>
     </div>
-    <button
-      onClick={() => setIsOpen(false)}
-      className="absolute top-4 right-4 text-white"
-    >
-      <CloseIcon />
-    </button>
   </motion.div>
 );
 

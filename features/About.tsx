@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import BlurFade from "@/components/magicui/blur-fade";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import NumberTicker from "@/components/magicui/number-ticker";
+import Image from "next/image";
 
 const About = () => {
   const ref = useRef(null);
@@ -49,7 +50,7 @@ const About = () => {
       {/* Decorative elements */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-1/4 right-1/4 w-32 h-32 bg-indigo-300 rounded-full opacity-20 blur-xl"
+          className="absolute top-1/4 right-1/4 w-32 h-32 bg-indigo-300 rounded-full opacity-0 md:opacity-30 blur-xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.2, 0.3, 0.2],
@@ -70,6 +71,14 @@ const About = () => {
         cy={1}
         cr={1}
         className="absolute inset-0 opacity-30"
+      />
+
+      <Image
+        src="/assets/asset-4.svg"
+        alt="asset-4"
+        width={1920}
+        height={1080}
+        className="absolute right-0 top-0 bottom-0 opacity-25"
       />
 
       <div className="container mx-auto px-4 py-8 sm:py-16 relative z-10">
