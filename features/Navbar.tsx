@@ -36,8 +36,8 @@ const Navbar = () => {
           Nathan Renard
         </Link>
         <div className="hidden md:flex space-x-6">
-          <NavLink href="#stacks">Stacks</NavLink>
           <NavLink href="#about">About</NavLink>
+          <NavLink href="#stacks">Stacks</NavLink>
           <NavLink href="#projects">Projects</NavLink>
         </div>
         <button

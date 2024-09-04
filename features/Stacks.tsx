@@ -65,15 +65,15 @@ const Stacks = () => {
             </BlurFade>
           </div>
           <div className="w-full md:w-1/2 grid grid-cols-3 gap-4 sm:gap-8">
-            <TechLogo src="/next.svg" alt="Next.js" />
-            <TechLogo src="/vercel.svg" alt="Vercel" />
-            <TechLogo src="/supabase.svg" alt="Supabase" />
-            <TechLogo src="/react.svg" alt="React" />
-            <TechLogo src="/typescript.svg" alt="TypeScript" />
-            <TechLogo src="/tailwind-css.svg" alt="Tailwind CSS" />
-            <TechLogo src="/framer-motion.svg" alt="Framer Motion" />
-            <TechLogo src="/django.svg" alt="Django" />
-            <TechLogo src="/express.svg" alt="Express" />
+            <TechLogo src="logos/next.svg" alt="Next.js" />
+            <TechLogo src="logos/vercel.svg" alt="Vercel" />
+            <TechLogo src="logos/supabase.svg" alt="Supabase" />
+            <TechLogo src="logos/react.svg" alt="React" />
+            <TechLogo src="logos/typescript.svg" alt="TypeScript" />
+            <TechLogo src="logos/tailwind-css.svg" alt="Tailwind CSS" />
+            <TechLogo src="logos/framer-motion.svg" alt="Framer Motion" />
+            <TechLogo src="logos/django.svg" alt="Django" />
+            <TechLogo src="logos/express.svg" alt="Express" />
           </div>
         </motion.div>
 
@@ -89,17 +89,17 @@ const Stacks = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <TechItem
-              icon="next.svg"
+              icon="logos/next.svg"
               name="Next.js"
               description="Next.js is perfect for fast, SEO-friendly MVPs with Server-Side Rendering and Static Site Generation, ensuring scalability from the start."
             />
             <TechItem
-              icon="vercel.svg"
+              icon="logos/vercel.svg"
               name="Vercel"
               description="Vercel enables quick deployment and seamless scaling, ideal for MVPs. Its integration with Next.js simplifies the development process."
             />
             <TechItem
-              icon="supabase.svg"
+              icon="logos/supabase.svg"
               name="Supabase"
               description="Supabase offers an open-source, Firebase-like experience for rapid MVP development, with real-time databases and easy back-end setup."
             />
