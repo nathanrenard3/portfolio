@@ -34,7 +34,7 @@ const projects: Project[] = [
     id: 2,
     title: "CountAct",
     description:
-      "A SaaS for directors to manage emercies operations and manage her teams.",
+      "A SaaS for directors to manage emergency operations and manage her teams.",
     technologies: ["React", "Django", "Postgres", "Docker"],
     image: "/projects/countact.png",
     ctaText: "View Project",
