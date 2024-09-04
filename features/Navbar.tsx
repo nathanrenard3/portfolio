@@ -24,8 +24,10 @@ const Navbar = () => {
   return (
     <motion.nav
       className={cn(
-        "container fixed top-0 md:top-5 left-0 md:rounded-lg md:py-3 right-0 z-50 transition-colors duration-300 py-2",
-        scrolled ? "bg-gray-900/75 backdrop-blur-sm" : "bg-transparent"
+        "container fixed top-0 md:top-5 left-0 md:rounded-lg md:py-3 right-0 z-50 transition-all duration-300 py-2",
+        scrolled
+          ? "bg-gradient-to-b from-black/75 via-gray-900/75 to-gray-800/75 backdrop-blur-sm"
+          : "bg-transparent"
       )}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
