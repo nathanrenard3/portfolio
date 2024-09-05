@@ -5,7 +5,6 @@ import { useState } from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import { FadeText } from "@/components/magicui/fade-text";
 import BoxReveal from "@/components/magicui/box-reveal";
-import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
