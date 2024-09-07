@@ -72,7 +72,8 @@ const Hero = () => {
         </motion.div>
         <BlurFade delay={0.6}>
           <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-8 px-4">
-            Crafting elegant and performant solutions for your business.
+            Delivering elegant and high-performance solutions that drive
+            innovation and success for your business.
           </p>
         </BlurFade>
         <BlurFade delay={0.8}>
