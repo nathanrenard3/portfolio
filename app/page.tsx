@@ -17,7 +17,12 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <main className={cn("w-full h-full", isLoading && "overflow-hidden")}>
+    <main
+      className={cn(
+        "w-full h-full overflow-x-clip",
+        isLoading && "overflow-hidden"
+      )}
+    >
       <Loading setIsLoading={setIsLoading} />
       {!isLoading && (
         <>
